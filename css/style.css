@@ -69,13 +69,18 @@ body {
   border: none;
 }
 
+.down-arrow-div {
+  text-align: center;
+  margin-top: 0px;
+}
+
 .dn-ar {
   text-align: center;
   color: #ffe3e3;
 }
 
-/* @media (max-width: 420px) {
-  .main-hero {
-    height: 80vh;
+@media (max-width: 420px) {
+  .down-arrow-div {
+    margin-top: 5vh;
   }
-} */
+}
