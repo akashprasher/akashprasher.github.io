@@ -187,6 +187,10 @@ body {
   left: 50%;
 }
 
+.timeline {
+  margin-top: 3rem;
+}
+
 .timeline-content {
   position: relative;
   display: flex;
@@ -231,6 +235,12 @@ body {
   justify-content: flex-end;
 }
 
+@media (max-width: 575px) {
+  .text-brief {
+    flex-wrap: nowrap !important;
+  }
+}
+
 @media (max-width: 420px) {
   .down-arrow-div {
     margin-top: 5vh;
@@ -238,4 +248,31 @@ body {
   .social {
     display: none;
   }
+  .text-brief {
+    flex-wrap: nowrap !important;
+  }
+
+  .main-hero {
+    height: 100vh;
+  }
+
+  .timeline-content section {
+    width: 100%;
+  }
+
+  .center-line {
+    display: none;
+  }
+
+  .timeline {
+    margin-top: 0rem;
+  }
+
+  .timeline-content section::before {
+    display: none;
+  }
+
+  /* .text-shadow-span {
+    font-size: 2rem;
+  } */
 }
