@@ -11,7 +11,8 @@
   scroll-behavior: smooth;
 }
 
-.progress {
+.progressive {
+  z-index: 999;
   position: fixed;
   height: 10px;
   width: 100%;
@@ -22,7 +23,12 @@
 
 .progress__bar {
   transition: width 0.15s linear;
-  background-color: #ff5a5a;
+  /* background-color: #ff5a5a; */
+  background: -webkit-linear-gradient(to right, #ff5a5a, #bd276d);
+  background: -moz-linear-gradient(to right, #ff5a5a, #bd276d);
+  background: -ms-linear-gradient(to right, #ff5a5a, #bd276d);
+  background: -o-linear-gradient(to right, #ff5a5a, #bd276d);
+  background: linear-gradient(to right, #ff5a5a, #bd276d);
   height: 100%;
   width: 0%;
 }
@@ -51,6 +57,7 @@
 .social-icons-div i:hover {
   margin: 5px 0px;
   font-size: 2em;
+  color: #ff5a5a;
 }
 
 body {
@@ -69,6 +76,10 @@ body {
 }
 
 /* #ff5a5a */
+
+#home {
+  min-height: 100vh;
+}
 
 .main-hero {
   height: 90vh;
@@ -119,6 +130,105 @@ body {
 .dn-ar {
   text-align: center;
   color: #ffe3e3;
+}
+
+#sectionSecond {
+  position: relative;
+}
+
+.main-headings {
+  color: #ffe3e3;
+  box-shadow: 0px 2px #ff5a5a;
+  /* text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); */
+}
+
+.details {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-right {
+  max-width: 30%;
+}
+
+.details-right p {
+  font-size: 12px;
+  margin-bottom: 0px;
+  color: #2b2c3d;
+  font-weight: 500;
+}
+
+.text-shadow {
+  position: relative;
+}
+
+.text-shadow-span {
+  position: absolute;
+  font-size: 3rem;
+  filter: blur(1px);
+  /* top: %; */
+  left: 0px;
+  color: #bd276d1e;
+}
+
+.at {
+  font-style: italic;
+  font-weight: 200;
+  color: #262a53;
+}
+
+.center-line {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #ffe3e3;
+  left: 50%;
+}
+
+.timeline-content {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timeline-content section {
+  /* height: ; */
+  background-color: #ffe3e3;
+  color: #262a53;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.timeline-content section::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #ffe3e3;
+  top: 45%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.timeline-left-col section::before {
+  right: -7px;
+}
+
+.timeline-right-col section::before {
+  left: -7px;
+}
+
+.timeline-left-col {
+  justify-content: flex-start;
+}
+
+.timeline-right-col {
+  justify-content: flex-end;
 }
 
 @media (max-width: 420px) {
