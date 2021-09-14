@@ -11,6 +11,22 @@
   scroll-behavior: smooth;
 }
 
+.progress {
+  position: fixed;
+  height: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.26);
+  top: 0;
+  left: 0;
+}
+
+.progress__bar {
+  transition: width 0.15s linear;
+  background-color: #ff5a5a;
+  height: 100%;
+  width: 0%;
+}
+
 .social {
   position: fixed;
   height: 100vh;

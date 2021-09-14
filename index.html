@@ -16,6 +16,9 @@
     <title>Akash Prasher</title>
   </head>
   <body>
+    <div class="progress">
+      <div class="progress__bar" id="progressBar"></div>
+    </div>
     <section class="social">
       <div class="social-icons">
         <div class="social-icons-div">
@@ -26,43 +29,46 @@
         </div>
       </div>
     </section>
-    <section id="home">
-      <div class="container">
-        <div class="row main-hero text-brief flex-column-reverse flex-md-row">
-          <div class="col-sm-6">
-            <h1>I'm <span class="name">Akash Prasher,</span></h1>
-            <h1><span class="role">Frontend Developer</span></h1>
-            <p class="mt-4">
-              An enthusiast Software Engineering Student. Currently Contributing
-              in Open Source via Github. I've been working with Web Technologies
-              like HTML, CSS, JavaScript, ReactJs, MongoDB, Firebase, and APIs.
-            </p>
-            <div class="mt-4">
-              <a href="https://github.com/akashprasher" target="_blank"
-                ><button class="btn btn-primary btn-hero">
-                  <i class="fab fa-github"></i> Github
-                </button></a
-              >
-              <a href="#"
-                ><button class="btn btn-primary btn-hero">
-                  <i class="fas fa-download"></i> Resume
-                </button></a
-              >
+    <main class="main-container" id="mainContainer">
+      <section id="home">
+        <div class="container">
+          <div class="row main-hero text-brief flex-column-reverse flex-md-row">
+            <div class="col-sm-6">
+              <h1>I'm <span class="name">Akash Prasher,</span></h1>
+              <h1><span class="role">Frontend Developer</span></h1>
+              <p class="mt-4">
+                An enthusiast Software Engineering Student. Currently
+                Contributing in Open Source via Github. I've been working with
+                Web Technologies like HTML, CSS, JavaScript, ReactJs, MongoDB,
+                Firebase, and APIs.
+              </p>
+              <div class="mt-4">
+                <a href="https://github.com/akashprasher" target="_blank"
+                  ><button class="btn btn-primary btn-hero">
+                    <i class="fab fa-github"></i> Github
+                  </button></a
+                >
+                <a href="#"
+                  ><button class="btn btn-primary btn-hero">
+                    <i class="fas fa-download"></i> Resume
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-sm-6 img-col">
+              <img class="img-fluid avt" src="./assets/display.jpg" alt="" />
             </div>
           </div>
-          <div class="col-sm-6 img-col">
-            <img class="img-fluid avt" src="./assets/display.jpg" alt="" />
+          <div class="down-arrow-div">
+            <a class="dn-ar" href="#sectionSecond"
+              ><i class="fa fa-chevron-down" aria-hidden="true"></i
+            ></a>
           </div>
         </div>
-        <div class="down-arrow-div">
-          <a class="dn-ar" href="#sectionSecond"
-            ><i class="fa fa-chevron-down" aria-hidden="true"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-    <section id="sectionSecond" style="height: 100vh"></section>
-    <section id="thirdSection" style="height: 100vh"></section>
+      </section>
+      <section id="sectionSecond" style="height: 100vh"></section>
+      <section id="thirdSection" style="height: 100vh"></section>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>
