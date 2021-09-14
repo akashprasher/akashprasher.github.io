@@ -11,6 +11,32 @@
   scroll-behavior: smooth;
 }
 
+.social {
+  position: fixed;
+  height: 100vh;
+}
+
+.social-icons {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons-div {
+  position: absolute;
+  left: 95vw;
+}
+
+.social-icons-div i {
+  color: #262a53;
+}
+
+.social-icons-div i:hover {
+  margin: 5px 0px;
+  font-size: 2em;
+}
+
 body {
   height: 100%;
   -webkit-background-size: cover;
