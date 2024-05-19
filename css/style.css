@@ -245,7 +245,7 @@ body {
   justify-content: flex-end;
 }
 
-#thirdSection {
+#contact-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,12 +254,12 @@ body {
   color: #262a53;
 }
 
-#thirdSection a {
+#contact-section a {
   text-decoration: none;
   color: #262a53;
 }
 
-#thirdSection h4 {
+#contact-section h4 {
   max-width: 70vw;
   margin: auto;
 }
